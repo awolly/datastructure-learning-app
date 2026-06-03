@@ -1,0 +1,18 @@
+<div class="topic-detail" *ngIf="topic">
+    <h2>{{ topic.name }}</h2>
+    <p class="description">{{ topic.description }}</p>
+  
+    <h3>Lessons</h3>
+    <div class="lessons">
+      <div class="lesson-card" *ngFor="let lesson of topic.lessons">
+        <h4>{{ lesson.title }}</h4>
+        <a [routerLink]="['/topics', topic.id, 'lessons', lesson.id]">View Lesson</a>
+      </div>
+    </div>
+  
+    <div class="quiz-link">
+      <a [routerLink]="['/topics', topic.id, 'quiz']">Take the Quiz</a>
+    </div>
+  
+    <a routerLink="/" class="back-link">← Back to Topics</a>
+  </div>

@@ -1,0 +1,144 @@
+.quiz {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .question {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .options {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .options button {
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+  }
+  
+  .options button:hover:not([disabled]) {
+    border-color: #2196F3;
+    background: #f0f7ff;
+  }
+  
+  .options button.selected {
+    border-color: #2196F3;
+    background: #e3f2fd;
+  }
+  
+  .options button.correct {
+    border-color: #4CAF50;
+    background: #e8f5e9;
+  }
+  
+  .options button.wrong {
+    border-color: #f44336;
+    background: #ffebee;
+  }
+  
+  .options button.show-correct {
+    border-color: #4CAF50;
+    background: #e8f5e9;
+  }
+  
+  .options button[disabled] {
+    cursor: default;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .submit-btn {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:disabled {
+    background: #ccc;
+    cursor: default;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background: #1976D2;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+  }
+  
+  .correct-text {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .wrong-text {
+    color: #f44336;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .next-btn {
+    background: #FF9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .next-btn:hover {
+    background: #F57C00;
+  }
+  
+  .results {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .score {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .back-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .back-btn:hover {
+    background: #45a049;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    color: #333;
+  }

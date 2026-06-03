@@ -1,0 +1,71 @@
+.topic-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .description {
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .lessons {
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .lesson-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lesson-card h4 {
+    margin: 0;
+  }
+  
+  .lesson-card a {
+    background: #2196F3;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .lesson-card a:hover {
+    background: #1976D2;
+  }
+  
+  .quiz-link {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .quiz-link a {
+    background: #FF9800;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .quiz-link a:hover {
+    background: #F57C00;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    color: #333;
+  }

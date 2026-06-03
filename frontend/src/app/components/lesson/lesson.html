@@ -1,0 +1,12 @@
+<div class="lesson" *ngIf="lesson">
+    <h2>{{ lesson.title }}</h2>
+    <div class="content">
+      <p>{{ lesson.content }}</p>
+    </div>
+    <div class="example">
+      <h3>Example</h3>
+      <pre><code>{{ lesson.example }}</code></pre>
+    </div>
+    <a [routerLink]="['/topics', topicId]" class="back-link">← Back to Topic</a>
+  </div>
+  

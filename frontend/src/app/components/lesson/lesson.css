@@ -1,0 +1,46 @@
+.lesson {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .example {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .example h3 {
+    color: #fff;
+    margin: 0 0 10px 0;
+  }
+  
+  .example pre {
+    margin: 0;
+  }
+  
+  .example code {
+    color: #4FC3F7;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    color: #333;
+  }
+  

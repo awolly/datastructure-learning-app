@@ -1,0 +1,43 @@
+<div class="quiz">
+
+    <div *ngIf="questions.length === 0">
+      <p>Loading quiz...</p>
+    </div>
+  
+    <div *ngIf="questions.length > 0 && !quizComplete">
+      <h2>Question {{ currentQuestion + 1 }} of {{ questions.length }}</h2>
+      <p class="question">{{ questions[currentQuestion].question }}</p>
+  
+      <div class="options">
+        <button
+          *ngFor="let option of questions[currentQuestion].options"
+          (click)="selectAnswer(option)"
+          [class.selected]="selectedAnswer === option"
+          [class.correct]="result && result.correct && option === selectedAnswer"
+          [class.wrong]="result && !result.correct && option === selectedAnswer"
+          [class.show-correct]="result && !result.correct && option === result.correct_answer"
+          [disabled]="result !== null">
+          {{ option }}
+        </button>
+      </div>
+  
+      <div class="actions">
+        <button *ngIf="!result" (click)="submitAnswer()" [disabled]="!selectedAnswer" class="submit-btn">
+          Submit Answer
+        </button>
+        <div *ngIf="result" class="feedback">
+          <p *ngIf="result.correct" class="correct-text">Correct!</p>
+          <p *ngIf="!result.correct" class="wrong-text">Wrong! The answer is: {{ result.correct_answer }}</p>
+          <button (click)="nextQuestion()" class="next-btn">Next Question</button>
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="quizComplete" class="results">
+      <h2>Quiz Complete!</h2>
+      <p class="score">You scored {{ score }} out of {{ questions.length }}</p>
+      <a [routerLink]="['/topics', topicId]" class="back-btn">Back to Topic</a>
+    </div>
+  
+    <a [routerLink]="['/topics', topicId]" class="back-link" *ngIf="!quizComplete">← Back to Topic</a>
+  </div>

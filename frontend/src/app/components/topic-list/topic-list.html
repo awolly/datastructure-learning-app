@@ -1,0 +1,10 @@
+<div class="topic-list">
+    <h2>Choose a Topic</h2>
+    <div class="topics">
+      <div class="topic-card" *ngFor="let topic of topics">
+        <h3>{{ topic.name }}</h3>
+        <p>{{ topic.description }}</p>
+        <a [routerLink]="['/topics', topic.id]">Start Learning</a>
+      </div>
+    </div>
+  </div>
