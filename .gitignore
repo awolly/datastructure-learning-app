@@ -1,0 +1,11 @@
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Angular
+frontend/node_modules/
+frontend/.angular/
+
+# System files
+.DS_Store
